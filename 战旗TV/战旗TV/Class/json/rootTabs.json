@@ -1,0 +1,54 @@
+{
+    "items": [
+              {
+              "title": "首页",
+              "key": "tab_home",
+              "subitems": [
+                           {
+                           "type": "tab",
+                           "title": "首页",
+                           "image": "tabbar_home_sel@2x.png",
+                           "image_hl": "tabbar_home_sel@2x.png"
+                           }
+                           ]
+              },
+              {
+              "title": "直播",
+              "key": "tab_live",
+              "subitems": [
+                           {
+                           "type": "tab",
+                           "title": "直播",
+                           "image": "tabbar_room@2x.png",
+                           "image_hl": "tabbar_room_sel@2x.png"
+                           }
+                           ]
+              },
+              {
+              "title": "游戏",
+              "key": "tab_game",
+              "subitems": [
+                           {
+                           "type": "tab",
+                           "title": "游戏",
+                           "image": "tabbar_game@2x.png",
+                           "image_hl": "tabbar_game_sel@2x.png"
+                           }
+                           ]
+              },
+              {
+              "title": "我的",
+              "key": "tab_me",
+              "subitems": [
+                           {
+                           "type": "tab",
+                           "title": "我的",
+                           "image": "tabbar_me@2x.png",
+                           "image_hl": "tabbar_me_sel@2x.png"
+                           }
+                           ]
+              }
+
+              
+              ]
+}

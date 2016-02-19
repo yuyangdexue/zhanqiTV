@@ -1,0 +1,98 @@
+PODS:
+  - AFNetworking (2.6.2):
+    - AFNetworking/NSURLConnection (= 2.6.2)
+    - AFNetworking/NSURLSession (= 2.6.2)
+    - AFNetworking/Reachability (= 2.6.2)
+    - AFNetworking/Security (= 2.6.2)
+    - AFNetworking/Serialization (= 2.6.2)
+    - AFNetworking/UIKit (= 2.6.2)
+  - AFNetworking/NSURLConnection (2.6.2):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.2):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.2)
+  - AFNetworking/Security (2.6.2)
+  - AFNetworking/Serialization (2.6.2)
+  - AFNetworking/UIKit (2.6.2):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - AMap2DMap (3.1.0)
+  - FMDB (2.5):
+    - FMDB/standard (= 2.5)
+  - FMDB/common (2.5)
+  - FMDB/standard (2.5):
+    - FMDB/common
+  - IQKeyboardManager (3.3.4)
+  - JSONModel (1.1.2)
+  - libextobjc (0.4.1):
+    - libextobjc/EXTADT (= 0.4.1)
+    - libextobjc/EXTConcreteProtocol (= 0.4.1)
+    - libextobjc/EXTKeyPathCoding (= 0.4.1)
+    - libextobjc/EXTNil (= 0.4.1)
+    - libextobjc/EXTSafeCategory (= 0.4.1)
+    - libextobjc/EXTScope (= 0.4.1)
+    - libextobjc/EXTSelectorChecking (= 0.4.1)
+    - libextobjc/EXTSynthesize (= 0.4.1)
+    - libextobjc/NSInvocation+EXT (= 0.4.1)
+    - libextobjc/NSMethodSignature+EXT (= 0.4.1)
+    - libextobjc/RuntimeExtensions (= 0.4.1)
+    - libextobjc/UmbrellaHeader (= 0.4.1)
+  - libextobjc/EXTADT (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTConcreteProtocol (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTKeyPathCoding (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTNil (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTSafeCategory (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTScope (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTSelectorChecking (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTSynthesize (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/NSInvocation+EXT (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/NSMethodSignature+EXT (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/RuntimeExtensions (0.4.1)
+  - libextobjc/UmbrellaHeader (0.4.1)
+  - MCUIColorUtils (1.0.0)
+  - NSDictionary+Accessors (1.0.0)
+  - UIActionSheet+Blocks (0.9)
+  - UIAlertView+Block (1.1.0)
+  - UMengAnalytics (3.6.4)
+
+DEPENDENCIES:
+  - AFNetworking
+  - AMap2DMap
+  - FMDB
+  - IQKeyboardManager
+  - JSONModel
+  - libextobjc
+  - MCUIColorUtils
+  - NSDictionary+Accessors
+  - UIActionSheet+Blocks
+  - UIAlertView+Block
+  - UMengAnalytics
+
+SPEC CHECKSUMS:
+  AFNetworking: 7f317038a9710cabfa43ec56396b307b45df72ab
+  AMap2DMap: a6741139dd16d237713c4fd6cae9a0399ca1fe25
+  FMDB: 96e8f1bcc1329e269330f99770ad4285d9003e52
+  IQKeyboardManager: ac803e61e5b50efae6b3aeedd95a02c7c7d3b2b3
+  JSONModel: 216584d0311b053ff714f1d6cb700dbf890847bc
+  libextobjc: a650fc1bf489a3d3a9bc2e621efa3e1006fc5471
+  MCUIColorUtils: 6f11e1702db4ff5419d28cba1e8f7a82dd82d5fe
+  NSDictionary+Accessors: 5c453c028da416525428c938602c7c96704a9bbc
+  UIActionSheet+Blocks: e180b7dad0a721ab7f212ac9742af799008bb358
+  UIAlertView+Block: fa6fcfe2c5110d3b6e9b9d9bfb46ac9250007f65
+  UMengAnalytics: d24fb5200e13d2874f36b6337bc129b96511c54e
+
+COCOAPODS: 0.39.0
