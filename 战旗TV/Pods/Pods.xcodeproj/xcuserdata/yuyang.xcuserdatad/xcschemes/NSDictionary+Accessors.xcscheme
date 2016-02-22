@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '852FE143ADDBDFD16416C6B6'
+               BlueprintIdentifier = 'A796B945C65F01045D07F34F'
                BlueprintName = 'NSDictionary+Accessors'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libNSDictionary+Accessors.a'>

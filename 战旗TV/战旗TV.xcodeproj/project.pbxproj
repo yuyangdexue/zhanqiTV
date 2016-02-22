@@ -15,6 +15,8 @@
 		269A230A1C76FC250015A406 /* GameListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 269A23091C76FC250015A406 /* GameListModel.m */; };
 		269A230D1C76FEAF0015A406 /* GameListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 269A230C1C76FEAF0015A406 /* GameListCell.m */; };
 		269A23141C77211D0015A406 /* RoomDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 269A23131C77211D0015A406 /* RoomDetailController.m */; };
+		269A231A1C7AFA2B0015A406 /* PlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 269A23191C7AFA2B0015A406 /* PlayerView.m */; };
+		269A231D1C7AFF0D0015A406 /* NavgationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 269A231C1C7AFF0D0015A406 /* NavgationView.m */; };
 		26F153121C75B5610094BB8E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F153111C75B5610094BB8E /* main.m */; };
 		26F153151C75B5620094BB8E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F153141C75B5620094BB8E /* AppDelegate.m */; };
 		26F1531D1C75B5620094BB8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26F1531C1C75B5620094BB8E /* Assets.xcassets */; };
@@ -668,6 +670,10 @@
 		269A230C1C76FEAF0015A406 /* GameListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameListCell.m; sourceTree = "<group>"; };
 		269A23121C77211D0015A406 /* RoomDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoomDetailController.h; sourceTree = "<group>"; };
 		269A23131C77211D0015A406 /* RoomDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoomDetailController.m; sourceTree = "<group>"; };
+		269A23181C7AFA2B0015A406 /* PlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerView.h; sourceTree = "<group>"; };
+		269A23191C7AFA2B0015A406 /* PlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerView.m; sourceTree = "<group>"; };
+		269A231B1C7AFF0D0015A406 /* NavgationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavgationView.h; sourceTree = "<group>"; };
+		269A231C1C7AFF0D0015A406 /* NavgationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavgationView.m; sourceTree = "<group>"; };
 		26B121782D8772E1AF080B25 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		26F1530D1C75B5610094BB8E /* 战旗TV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "战旗TV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		26F153111C75B5610094BB8E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -1376,6 +1382,8 @@
 		269A230F1C7719FD0015A406 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				269A23181C7AFA2B0015A406 /* PlayerView.h */,
+				269A23191C7AFA2B0015A406 /* PlayerView.m */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -2153,6 +2161,8 @@
 			children = (
 				26F1582A1C75C9090094BB8E /* BaseViewController.h */,
 				26F1582B1C75C9090094BB8E /* BaseViewController.m */,
+				269A231B1C7AFF0D0015A406 /* NavgationView.h */,
+				269A231C1C7AFF0D0015A406 /* NavgationView.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -3096,6 +3106,7 @@
 				26F158001C75BC630094BB8E /* LibiaryAPI.m in Sources */,
 				26F1587D1C75CA460094BB8E /* TabbarModel.m in Sources */,
 				269A23141C77211D0015A406 /* RoomDetailController.m in Sources */,
+				269A231D1C7AFF0D0015A406 /* NavgationView.m in Sources */,
 				26F158891C75D2A90094BB8E /* MineViewController.m in Sources */,
 				26F158651C75C9B00094BB8E /* SVProgressHUD.m in Sources */,
 				26F153151C75B5620094BB8E /* AppDelegate.m in Sources */,
@@ -3105,6 +3116,7 @@
 				26F158601C75C9B00094BB8E /* NSArray+BFKit.m in Sources */,
 				26F1586E1C75C9C20094BB8E /* Utilities.m in Sources */,
 				269A23011C76C6450015A406 /* AdModel.m in Sources */,
+				269A231A1C7AFA2B0015A406 /* PlayerView.m in Sources */,
 				26F1588E1C76B5B00094BB8E /* HomeMenuHeader.m in Sources */,
 				26F158031C75BC850094BB8E /* HTTPClient.m in Sources */,
 				26F158671C75C9B00094BB8E /* UIScrollView+SVPullToRefresh.m in Sources */,

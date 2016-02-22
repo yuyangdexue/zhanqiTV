@@ -20,7 +20,7 @@ float kDeviceHeight = 568.0;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
+     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent]; 
     CGRect cframe = [[UIScreen mainScreen] bounds];
     
     kDeviceWidth = cframe.size.width;

@@ -14,6 +14,7 @@
 #import "LibiaryAPI.h"
 #import "AdModel.h"
 #import "HomeListModel.h"
+#import "RoomDetailController.h"
 
 #define IDENTIFIER_CELL @"homeMenuCell"
 #define IDENTIFIER_HEADER @"homeMenuHeader"
@@ -165,7 +166,8 @@
 didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     [collectionView deselectItemAtIndexPath:indexPath animated:YES];
     
-
+    RoomDetailController *rvc = [[RoomDetailController alloc]init];
+    [self.navigationController pushViewController:rvc animated:YES];
 }
 
 
