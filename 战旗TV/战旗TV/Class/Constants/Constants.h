@@ -49,6 +49,7 @@ extern float kDeviceHeight;
 #define kTabBarHeight 49
 
 #define PREFIX_URL @"http://www.zhanqi.tv/api/"//正式
+#define HLS_URL @"http://dlhls.cdn.zhanqi.tv/zqlive/"
 #define kColor_Main_Color  [UIColor colorWithHexRGB:0x589FF5]
 
 typedef NS_ENUM(int, AppURL) {

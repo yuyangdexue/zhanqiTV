@@ -10,4 +10,6 @@
 
 @interface RoomDetailController : UIViewController
 
+- (instancetype)initWithVideoId:(NSString *)vid;
+
 @end

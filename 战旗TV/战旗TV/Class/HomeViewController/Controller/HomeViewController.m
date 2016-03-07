@@ -15,6 +15,7 @@
 #import "AdModel.h"
 #import "HomeListModel.h"
 #import "RoomDetailController.h"
+#import <MediaPlayer/MediaPlayer.h>
 
 #define IDENTIFIER_CELL @"homeMenuCell"
 #define IDENTIFIER_HEADER @"homeMenuHeader"
@@ -166,8 +167,14 @@
 didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     [collectionView deselectItemAtIndexPath:indexPath animated:YES];
     
-    RoomDetailController *rvc = [[RoomDetailController alloc]init];
+   NSLog(@"====%@",((Lists *)[((HomeListModel *)[homeSuperListModel.data objectAtIndex:indexPath.section]).lists objectAtIndex:indexPath.row]).videoId);
+    RoomDetailController *rvc = [[RoomDetailController alloc]initWithVideoId: ((Lists *)[((HomeListModel *)[homeSuperListModel.data objectAtIndex:indexPath.section]).lists objectAtIndex:indexPath.row]).videoId];
     [self.navigationController pushViewController:rvc animated:YES];
+//     [NSString stringWithFormat:@"%@%@.m3u8",HLS_URL,_vid]
+//    NSURL *url = [[NSURL alloc] initWithString:TEST_HLS_URL];
+//    MPMoviePlayerViewController *player = [[MPMoviePlayerViewController alloc] initWithContentURL:url];
+//    [self presentMoviePlayerViewControllerAnimated:player];
+
 }
 
 
