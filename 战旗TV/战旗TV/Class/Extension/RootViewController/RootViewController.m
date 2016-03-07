@@ -17,6 +17,8 @@
 
 @implementation RootViewController
 
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     //self.tabBar.tintColor=kColor_Main_Color;

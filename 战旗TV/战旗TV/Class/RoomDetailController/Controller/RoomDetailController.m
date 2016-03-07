@@ -51,14 +51,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self createBasicConfig];
-    [self createNav];
+   [self createNav];
 
     [self playVideo];
 }
 
 - (void)createNav{
     navView  = [[NavgationView alloc]initWithFrame:CGRectMake(0, 0, kDeviceHeight, 44) viewController:self];
-    //navView.backgroundColor =[UIColor greenColor];
     [self.view addSubview:navView];
     CATransform3D transform = CATransform3DMakeRotation(M_PI / 2, 0, 0, 1.0);
     navView.layer.transform = transform;
@@ -129,11 +128,6 @@
     
 }
 
-- (void)viewDidDisappear:(BOOL)animated
-{
-    [super viewDidDisappear:animated];
-    [self.player replaceCurrentItemWithPlayerItem:nil];
-}
 
 - (void)playVideo{
     NSMutableString * filePath = [[NSMutableString alloc]initWithString:  [NSString stringWithFormat:@"%@%@.m3u8",HLS_URL,_vid] ];

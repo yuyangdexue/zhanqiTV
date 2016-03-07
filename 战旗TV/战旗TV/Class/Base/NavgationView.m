@@ -10,9 +10,10 @@
 #import "Constants.h"
 @interface NavgationView (){
     UIButton *leftBtn;
-    id  _viewController;
+   
 }
 
+@property (nonatomic,weak) UIViewController  *viewController;
 @end
 @implementation NavgationView
 

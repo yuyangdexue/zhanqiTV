@@ -10,6 +10,7 @@
 #import "LibiaryAPI.h"
 #import "LiveModel.h"
 #import "HomeCell.h"
+#import "RoomDetailController.h"
 #define IDENTIFIER_CELL @"homeMenuCell"
 @interface LiveViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 {
@@ -100,6 +101,10 @@
 - (void)collectionView:(UICollectionView *)collectionView
 didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     [collectionView deselectItemAtIndexPath:indexPath animated:YES];
+    
+    RoomDetailController *rvc = [[RoomDetailController alloc]initWithVideoId: ((Lists *)[superLiveModel.data.rooms objectAtIndex:indexPath.row]).videoId];
+    [self.navigationController pushViewController:rvc animated:YES];
+
     
     
 }
