@@ -160,7 +160,7 @@
        myTransform = _playerView.layer.transform;
     [self.view addSubview:_playerView];
     
-    _swtichBtn  =  [UIButton ButtonWithRect:CGRectMake(kDeviceWidth-60,kHeight-10 , 50, 40) title:@"" titleColor:[UIColor whiteColor] BackgroundImageWithColor:[UIColor clearColor] clickAction:@selector(swtichAction) viewController:self titleFont:14 contentEdgeInsets:UIEdgeInsetsZero];
+    _swtichBtn  =  [UIButton ButtonWithRect:CGRectMake(kDeviceWidth-44,kHeight-10 , 44, 44) title:@"" titleColor:[UIColor whiteColor] BackgroundImageWithColor:[UIColor clearColor] clickAction:@selector(swtichAction) viewController:self titleFont:14 contentEdgeInsets:UIEdgeInsetsZero];
     [_swtichBtn setImage:[UIImage imageNamed:@"movie_fullscreen"] forState:UIControlStateNormal];
     [self.view addSubview:_swtichBtn];
     
