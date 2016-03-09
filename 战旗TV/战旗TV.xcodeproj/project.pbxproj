@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26282CFD1C90089200D85C11 /* DLLRUCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 26282CF01C90089200D85C11 /* DLLRUCache.m */; };
+		26282CFE1C90089200D85C11 /* DLCustomSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26282CF21C90089200D85C11 /* DLCustomSlideView.m */; };
+		26282CFF1C90089200D85C11 /* DLSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26282CF41C90089200D85C11 /* DLSlideView.m */; };
+		26282D001C90089200D85C11 /* DLFixedTabbarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26282CF71C90089200D85C11 /* DLFixedTabbarView.m */; };
+		26282D011C90089200D85C11 /* DLScrollTabbarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26282CF91C90089200D85C11 /* DLScrollTabbarView.m */; };
+		26282D021C90089200D85C11 /* DLTabedSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26282CFC1C90089200D85C11 /* DLTabedSlideView.m */; };
 		269A22FD1C76BCB30015A406 /* CycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 269A22FA1C76BCB30015A406 /* CycleScrollView.m */; };
 		269A22FE1C76BCB30015A406 /* NSTimer+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 269A22FC1C76BCB30015A406 /* NSTimer+Addition.m */; };
 		269A23011C76C6450015A406 /* AdModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 269A23001C76C6450015A406 /* AdModel.m */; };
@@ -20,7 +26,6 @@
 		26F153121C75B5610094BB8E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F153111C75B5610094BB8E /* main.m */; };
 		26F153151C75B5620094BB8E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F153141C75B5620094BB8E /* AppDelegate.m */; };
 		26F1531D1C75B5620094BB8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26F1531C1C75B5620094BB8E /* Assets.xcassets */; };
-		26F153201C75B5620094BB8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26F1531E1C75B5620094BB8E /* LaunchScreen.storyboard */; };
 		26F155871C75B57C0094BB8E /* 10@2x.gif in Resources */ = {isa = PBXBuildFile; fileRef = 26F153281C75B5790094BB8E /* 10@2x.gif */; };
 		26F155881C75B57C0094BB8E /* 11@2x.gif in Resources */ = {isa = PBXBuildFile; fileRef = 26F153291C75B5790094BB8E /* 11@2x.gif */; };
 		26F155891C75B57C0094BB8E /* 12@2x.gif in Resources */ = {isa = PBXBuildFile; fileRef = 26F1532A1C75B5790094BB8E /* 12@2x.gif */; };
@@ -654,6 +659,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		26282CEE1C90089200D85C11 /* DLCacheProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLCacheProtocol.h; sourceTree = "<group>"; };
+		26282CEF1C90089200D85C11 /* DLLRUCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLLRUCache.h; sourceTree = "<group>"; };
+		26282CF01C90089200D85C11 /* DLLRUCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLLRUCache.m; sourceTree = "<group>"; };
+		26282CF11C90089200D85C11 /* DLCustomSlideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLCustomSlideView.h; sourceTree = "<group>"; };
+		26282CF21C90089200D85C11 /* DLCustomSlideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLCustomSlideView.m; sourceTree = "<group>"; };
+		26282CF31C90089200D85C11 /* DLSlideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSlideView.h; sourceTree = "<group>"; };
+		26282CF41C90089200D85C11 /* DLSlideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSlideView.m; sourceTree = "<group>"; };
+		26282CF61C90089200D85C11 /* DLFixedTabbarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLFixedTabbarView.h; sourceTree = "<group>"; };
+		26282CF71C90089200D85C11 /* DLFixedTabbarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLFixedTabbarView.m; sourceTree = "<group>"; };
+		26282CF81C90089200D85C11 /* DLScrollTabbarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLScrollTabbarView.h; sourceTree = "<group>"; };
+		26282CF91C90089200D85C11 /* DLScrollTabbarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLScrollTabbarView.m; sourceTree = "<group>"; };
+		26282CFA1C90089200D85C11 /* DLSlideTabbarProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSlideTabbarProtocol.h; sourceTree = "<group>"; };
+		26282CFB1C90089200D85C11 /* DLTabedSlideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLTabedSlideView.h; sourceTree = "<group>"; };
+		26282CFC1C90089200D85C11 /* DLTabedSlideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLTabedSlideView.m; sourceTree = "<group>"; };
 		269A22F91C76BCB30015A406 /* CycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CycleScrollView.h; sourceTree = "<group>"; };
 		269A22FA1C76BCB30015A406 /* CycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CycleScrollView.m; sourceTree = "<group>"; };
 		269A22FB1C76BCB30015A406 /* NSTimer+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Addition.h"; sourceTree = "<group>"; };
@@ -680,7 +699,6 @@
 		26F153131C75B5620094BB8E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		26F153141C75B5620094BB8E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		26F1531C1C75B5620094BB8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		26F1531F1C75B5620094BB8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		26F153211C75B5620094BB8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26F153281C75B5790094BB8E /* 10@2x.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "10@2x.gif"; sourceTree = "<group>"; };
 		26F153291C75B5790094BB8E /* 11@2x.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "11@2x.gif"; sourceTree = "<group>"; };
@@ -1358,6 +1376,43 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		26282CEC1C90089200D85C11 /* DLSlideView */ = {
+			isa = PBXGroup;
+			children = (
+				26282CED1C90089200D85C11 /* DLCache */,
+				26282CF11C90089200D85C11 /* DLCustomSlideView.h */,
+				26282CF21C90089200D85C11 /* DLCustomSlideView.m */,
+				26282CF31C90089200D85C11 /* DLSlideView.h */,
+				26282CF41C90089200D85C11 /* DLSlideView.m */,
+				26282CF51C90089200D85C11 /* DLTabbarView */,
+				26282CFB1C90089200D85C11 /* DLTabedSlideView.h */,
+				26282CFC1C90089200D85C11 /* DLTabedSlideView.m */,
+			);
+			path = DLSlideView;
+			sourceTree = "<group>";
+		};
+		26282CED1C90089200D85C11 /* DLCache */ = {
+			isa = PBXGroup;
+			children = (
+				26282CEE1C90089200D85C11 /* DLCacheProtocol.h */,
+				26282CEF1C90089200D85C11 /* DLLRUCache.h */,
+				26282CF01C90089200D85C11 /* DLLRUCache.m */,
+			);
+			path = DLCache;
+			sourceTree = "<group>";
+		};
+		26282CF51C90089200D85C11 /* DLTabbarView */ = {
+			isa = PBXGroup;
+			children = (
+				26282CF61C90089200D85C11 /* DLFixedTabbarView.h */,
+				26282CF71C90089200D85C11 /* DLFixedTabbarView.m */,
+				26282CF81C90089200D85C11 /* DLScrollTabbarView.h */,
+				26282CF91C90089200D85C11 /* DLScrollTabbarView.m */,
+				26282CFA1C90089200D85C11 /* DLSlideTabbarProtocol.h */,
+			);
+			path = DLTabbarView;
+			sourceTree = "<group>";
+		};
 		269A22F81C76BCB30015A406 /* Ad */ = {
 			isa = PBXGroup;
 			children = (
@@ -1430,7 +1485,6 @@
 				26F153131C75B5620094BB8E /* AppDelegate.h */,
 				26F153141C75B5620094BB8E /* AppDelegate.m */,
 				26F1531C1C75B5620094BB8E /* Assets.xcassets */,
-				26F1531E1C75B5620094BB8E /* LaunchScreen.storyboard */,
 				26F153211C75B5620094BB8E /* Info.plist */,
 				26F153101C75B5610094BB8E /* Supporting Files */,
 			);
@@ -2187,6 +2241,7 @@
 		26F1584C1C75C9B00094BB8E /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				26282CEC1C90089200D85C11 /* DLSlideView */,
 				269A22F81C76BCB30015A406 /* Ad */,
 				26F1584D1C75C9B00094BB8E /* BFKit */,
 				26F158541C75C9B00094BB8E /* SVProgressHUD */,
@@ -2611,7 +2666,6 @@
 				26F1564C1C75B57C0094BB8E /* firework_9@2x.png in Resources */,
 				26F156491C75B57C0094BB8E /* firework_6@2x.png in Resources */,
 				26F1570E1C75B57C0094BB8E /* ic_medal_09@2x.png in Resources */,
-				26F153201C75B5620094BB8E /* LaunchScreen.storyboard in Resources */,
 				26F155EF1C75B57C0094BB8E /* btn_slots_start_n@2x.png in Resources */,
 				26F155AC1C75B57C0094BB8E /* AppIcon40x40@2x~ipad.png in Resources */,
 				26F156F01C75B57C0094BB8E /* ic_level_wz_01@2x.png in Resources */,
@@ -3101,23 +3155,29 @@
 				26F158611C75C9B00094BB8E /* NSDate+BFKit.m in Sources */,
 				269A22FD1C76BCB30015A406 /* CycleScrollView.m in Sources */,
 				26F158831C75D2900094BB8E /* GameViewController.m in Sources */,
+				26282CFF1C90089200D85C11 /* DLSlideView.m in Sources */,
 				269A230A1C76FC250015A406 /* GameListModel.m in Sources */,
 				269A22FE1C76BCB30015A406 /* NSTimer+Addition.m in Sources */,
 				26F158001C75BC630094BB8E /* LibiaryAPI.m in Sources */,
 				26F1587D1C75CA460094BB8E /* TabbarModel.m in Sources */,
 				269A23141C77211D0015A406 /* RoomDetailController.m in Sources */,
+				26282D021C90089200D85C11 /* DLTabedSlideView.m in Sources */,
 				269A231D1C7AFF0D0015A406 /* NavgationView.m in Sources */,
 				26F158891C75D2A90094BB8E /* MineViewController.m in Sources */,
 				26F158651C75C9B00094BB8E /* SVProgressHUD.m in Sources */,
 				26F153151C75B5620094BB8E /* AppDelegate.m in Sources */,
 				26F158801C75D2830094BB8E /* HomeViewController.m in Sources */,
+				26282CFD1C90089200D85C11 /* DLLRUCache.m in Sources */,
 				26F158261C75C4200094BB8E /* RootViewController.m in Sources */,
 				269A23041C76D7D90015A406 /* HomeListModel.m in Sources */,
+				26282D001C90089200D85C11 /* DLFixedTabbarView.m in Sources */,
 				26F158601C75C9B00094BB8E /* NSArray+BFKit.m in Sources */,
 				26F1586E1C75C9C20094BB8E /* Utilities.m in Sources */,
 				269A23011C76C6450015A406 /* AdModel.m in Sources */,
+				26282D011C90089200D85C11 /* DLScrollTabbarView.m in Sources */,
 				269A231A1C7AFA2B0015A406 /* PlayerView.m in Sources */,
 				26F1588E1C76B5B00094BB8E /* HomeMenuHeader.m in Sources */,
+				26282CFE1C90089200D85C11 /* DLCustomSlideView.m in Sources */,
 				26F158031C75BC850094BB8E /* HTTPClient.m in Sources */,
 				26F158671C75C9B00094BB8E /* UIScrollView+SVPullToRefresh.m in Sources */,
 				269A23071C76F65A0015A406 /* LiveModel.m in Sources */,
@@ -3130,17 +3190,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		26F1531E1C75B5620094BB8E /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				26F1531F1C75B5620094BB8E /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		26F153221C75B5620094BB8E /* Debug */ = {
@@ -3228,6 +3277,7 @@
 			baseConfigurationReference = 26B121782D8772E1AF080B25 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "战旗TV/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yuyang.cn.--TV";
@@ -3240,6 +3290,7 @@
 			baseConfigurationReference = EB43E0037AFEB33D3420BD79 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "战旗TV/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yuyang.cn.--TV";
