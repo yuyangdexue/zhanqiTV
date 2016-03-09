@@ -23,6 +23,7 @@
 		269A23141C77211D0015A406 /* RoomDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 269A23131C77211D0015A406 /* RoomDetailController.m */; };
 		269A231A1C7AFA2B0015A406 /* PlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 269A23191C7AFA2B0015A406 /* PlayerView.m */; };
 		269A231D1C7AFF0D0015A406 /* NavgationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 269A231C1C7AFF0D0015A406 /* NavgationView.m */; };
+		26BA721C1C90360600EB4B09 /* GameSubListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26BA721B1C90360600EB4B09 /* GameSubListViewController.m */; };
 		26F153121C75B5610094BB8E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F153111C75B5610094BB8E /* main.m */; };
 		26F153151C75B5620094BB8E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F153141C75B5620094BB8E /* AppDelegate.m */; };
 		26F1531D1C75B5620094BB8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26F1531C1C75B5620094BB8E /* Assets.xcassets */; };
@@ -694,6 +695,8 @@
 		269A231B1C7AFF0D0015A406 /* NavgationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavgationView.h; sourceTree = "<group>"; };
 		269A231C1C7AFF0D0015A406 /* NavgationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavgationView.m; sourceTree = "<group>"; };
 		26B121782D8772E1AF080B25 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		26BA721A1C90360600EB4B09 /* GameSubListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameSubListViewController.h; sourceTree = "<group>"; };
+		26BA721B1C90360600EB4B09 /* GameSubListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameSubListViewController.m; sourceTree = "<group>"; };
 		26F1530D1C75B5610094BB8E /* 战旗TV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "战旗TV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		26F153111C75B5610094BB8E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		26F153131C75B5620094BB8E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -2351,6 +2354,8 @@
 			children = (
 				26F158811C75D2900094BB8E /* GameViewController.h */,
 				26F158821C75D2900094BB8E /* GameViewController.m */,
+				26BA721A1C90360600EB4B09 /* GameSubListViewController.h */,
+				26BA721B1C90360600EB4B09 /* GameSubListViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -3158,6 +3163,7 @@
 				26282CFF1C90089200D85C11 /* DLSlideView.m in Sources */,
 				269A230A1C76FC250015A406 /* GameListModel.m in Sources */,
 				269A22FE1C76BCB30015A406 /* NSTimer+Addition.m in Sources */,
+				26BA721C1C90360600EB4B09 /* GameSubListViewController.m in Sources */,
 				26F158001C75BC630094BB8E /* LibiaryAPI.m in Sources */,
 				26F1587D1C75CA460094BB8E /* TabbarModel.m in Sources */,
 				269A23141C77211D0015A406 /* RoomDetailController.m in Sources */,

@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "&#x6218;&#x65d7;TV/Class/RoomDetailController/Controller/RoomDetailController.m"
-            timestampString = "479204062.697792"
+            timestampString = "479214302.412356"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "203"
-            endingLineNumber = "203"
+            startingLineNumber = "204"
+            endingLineNumber = "204"
             landmarkName = "-dealloc"
             landmarkType = "5">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "&#x6218;&#x65d7;TV/Class/RoomDetailController/Controller/RoomDetailController.m"
-            timestampString = "479204062.697792"
+            timestampString = "479214302.412356"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "176"
-            endingLineNumber = "176"
+            startingLineNumber = "177"
+            endingLineNumber = "177"
             landmarkName = "-playVideo"
             landmarkType = "5">
          </BreakpointContent>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "&#x6218;&#x65d7;TV/Class/RoomDetailController/Controller/RoomDetailController.m"
-            timestampString = "479204062.697792"
+            timestampString = "479214302.412356"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "189"
-            endingLineNumber = "189"
+            startingLineNumber = "190"
+            endingLineNumber = "190"
             landmarkName = "-observeValueForKeyPath:ofObject:change:context:"
             landmarkType = "5">
          </BreakpointContent>
