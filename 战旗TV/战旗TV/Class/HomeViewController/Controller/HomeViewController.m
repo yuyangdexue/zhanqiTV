@@ -52,7 +52,7 @@
     
     _collectionView = [[UICollectionView alloc]
                  initWithFrame:CGRectMake(0, kMarginTopHeight, kDeviceWidth,
-                                          kDeviceHeight - kTabBarHeight - 1-kMarginTopHeight)
+                                          kDeviceHeight - kTabBarHeight -kMarginTopHeight)
                  collectionViewLayout:layout];
     
     _collectionView.dataSource = self;

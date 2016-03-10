@@ -22,6 +22,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.tabBar.backgroundColor = [UIColor whiteColor];
     //self.tabBar.tintColor=kColor_Main_Color;
     [self initSubView];
     // Do any additional setup after loading the view.
@@ -31,7 +32,6 @@
     
     NSMutableArray *controllers = [NSMutableArray array];
     
-
     TabbarSourceModel *sourceModel =[ [TabbarSourceModel alloc]initWithDictionary:[LibiaryAPI initWithFileName:@"rootTabs" extension:@"json"] error:nil];
     
       for (TabbarModel *tabModel in sourceModel.items) {
