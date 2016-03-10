@@ -27,7 +27,7 @@
             strSuffix = @"static/live.hots/20-1.json";
             break;
         case AppURL_Game:
-            strSuffix = @"static/game.lists/12-1.json";
+            strSuffix = @"static/game.lists/12-";
             break;
         case AppURL_GamelList:
             strSuffix = @"static/game.lives/";

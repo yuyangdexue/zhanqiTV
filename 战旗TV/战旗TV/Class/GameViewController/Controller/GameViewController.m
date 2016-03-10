@@ -11,11 +11,14 @@
 #import "LibiaryAPI.h"
 #import "GameListCell.h"
 #import "GameSubListViewController.h"
+#import "Constants.h"
 #define IDENTIFIER_CELL @"homeMenuCell"
 @interface GameViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 {
     SuperGameListModel *superGameListModel;
     UICollectionView *_collectionView;
+    NSMutableArray *arr;
+    NSInteger _page;
 }
 
 @end
@@ -24,21 +27,50 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    _page = 1;
+    arr = [[NSMutableArray alloc]init];
     [self showTopView];
-    
     [self initCollectionView];
-    [LibiaryAPI httpGET:AppURL_Game headerWithUserInfo:YES parameters:nil successBlock:^(int code, NSDictionary *dictResp) {
+    [_collectionView triggerPullToRefresh];
+  
+    
+    // Do any additional setup after loading the view.
+}
+
+- (void )loadDataPageIndex:(NSInteger )page top:(BOOL) isTop{
+    [LibiaryAPI httpGET:AppURL_Game  parametersUrl:[NSString stringWithFormat:@"%ld.json",page]   headerWithUserInfo:YES parameters:nil successBlock:^(int code, NSDictionary *dictResp) {
         
         superGameListModel  = [[SuperGameListModel alloc]initWithDictionary:dictResp error:nil];
         if ([superGameListModel.code integerValue]==0) {
+            
+            if (isTop) {
+                [arr removeAllObjects];
+                [arr addObjectsFromArray:superGameListModel.data.games];
+                [_collectionView.pullToRefreshView stopAnimating];
+            }
+            else{
+                [arr addObjectsFromArray:superGameListModel.data.games];
+                
+               
+                
+                [_collectionView.infiniteScrollingView stopAnimating];
+
+            }
             [_collectionView reloadData];
         }
     } failureBlock:^(NSError *error) {
         
     }];
-    
-    // Do any additional setup after loading the view.
+}
+
+- (void)loadTop{
+    _page = 1;
+    [self  loadDataPageIndex:_page top:YES];
+}
+
+- (void)loadMore{
+     _page += 1;
+      [self  loadDataPageIndex:_page top:NO];
 }
 
 - (void)initCollectionView{
@@ -67,15 +99,26 @@
     
     
     [self.view addSubview:_collectionView];
+    
+    __weak   GameViewController *weakSelf =self;
+    
+    [_collectionView  addPullToRefreshWithActionHandler:^{
+        [weakSelf loadTop];
+    }];
+    
+    [_collectionView addInfiniteScrollingWithActionHandler:^{
+        
+        [weakSelf loadMore];
+    }];
+    
 }
-
 
 #pragma mark - CollectionView Delegate
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView
      numberOfItemsInSection:(NSInteger)section {
     //    return _menuSource.items.count;
-    return  superGameListModel.data.games.count;
+    return arr.count;
 }
 
 
@@ -94,7 +137,7 @@
     GameListCell *cell =
     [collectionView dequeueReusableCellWithReuseIdentifier:IDENTIFIER_CELL
                                               forIndexPath:indexPath];
-    [cell resetModel:  [superGameListModel.data.games objectAtIndex:indexPath.row]];
+    [cell resetModel:  [arr objectAtIndex:indexPath.row]];
     
     return cell;
 }
@@ -105,7 +148,7 @@
 didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     [collectionView deselectItemAtIndexPath:indexPath animated:YES];
     
-    GameSubListViewController *gameList = [[GameSubListViewController alloc]initWithGameId:[superGameListModel.data.games objectAtIndex:indexPath.row]];
+    GameSubListViewController *gameList = [[GameSubListViewController alloc]initWithGameId:[arr objectAtIndex:indexPath.row]];
     [self.navigationController pushViewController:gameList animated:YES];
     
 }
