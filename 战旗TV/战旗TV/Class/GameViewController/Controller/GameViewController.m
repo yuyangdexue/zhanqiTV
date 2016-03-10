@@ -10,6 +10,7 @@
 #import "GameListModel.h"
 #import "LibiaryAPI.h"
 #import "GameListCell.h"
+#import "GameSubListViewController.h"
 #define IDENTIFIER_CELL @"homeMenuCell"
 @interface GameViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 {
@@ -104,6 +105,8 @@
 didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     [collectionView deselectItemAtIndexPath:indexPath animated:YES];
     
+    GameSubListViewController *gameList = [[GameSubListViewController alloc]initWithGameId:[superGameListModel.data.games objectAtIndex:indexPath.row]];
+    [self.navigationController pushViewController:gameList animated:YES];
     
 }
 

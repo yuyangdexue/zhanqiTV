@@ -7,7 +7,8 @@
 //
 
 #import "BaseViewController.h"
-
+#import "GameListModel.h"
 @interface GameSubListViewController : BaseViewController
 
+- (instancetype)initWithGameId:(GameListModel *)model;
 @end

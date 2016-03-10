@@ -29,6 +29,9 @@
         case AppURL_Game:
             strSuffix = @"static/game.lists/12-1.json";
             break;
+        case AppURL_GamelList:
+            strSuffix = @"static/game.lives/";
+            break;
         case AppURL_End:
             strSuffix = @"consultation/question";
             break;
@@ -44,16 +47,23 @@
 
 
 - (void)httpGET:(AppURL)appUrl
+  parametersUrl:(NSString *)url
 headerWithUserInfo:(BOOL)headerWithUserInfo
      parameters:(NSDictionary *)parameters
    successBlock:(void (^)(int code, NSDictionary *dictResp))successBlock
    failureBlock:(void (^)(NSError *error))failureBlock{
     [self httpMethod:appUrl
-                                 isPostMethod:NO
-                           headerWithUserInfo:headerWithUserInfo
-                                       params:parameters
-                                 successBlock:successBlock
-                                 failureBlock:failureBlock];
+       parametersUrl:url isPostMethod:NO headerWithUserInfo:headerWithUserInfo params:nil successBlock:successBlock failureBlock:failureBlock];
+
+}
+
+- (void)httpGET:(AppURL)appUrl
+headerWithUserInfo:(BOOL)headerWithUserInfo
+     parameters:(NSDictionary *)parameters
+   successBlock:(void (^)(int code, NSDictionary *dictResp))successBlock
+   failureBlock:(void (^)(NSError *error))failureBlock{
+    [self httpMethod:appUrl
+       parametersUrl:nil isPostMethod:NO headerWithUserInfo:headerWithUserInfo params:nil successBlock:successBlock failureBlock:failureBlock];
 }
 
 - (void)httpPOST:(AppURL)appUrl
@@ -61,17 +71,28 @@ headerWithUserInfo:(BOOL)headerWithUserInfo
       parameters:(NSDictionary *)parameters
     successBlock:(void (^)(int code, NSDictionary *dictResp))successBlock
     failureBlock:(void (^)(NSError *error))failureBlock{
+    
     [self httpMethod:appUrl
-                            isPostMethod:YES
-                      headerWithUserInfo:headerWithUserInfo
-                                  params:parameters
-                            successBlock:successBlock
-                            failureBlock:failureBlock];
+       parametersUrl:nil isPostMethod:YES headerWithUserInfo:headerWithUserInfo params:nil successBlock:successBlock failureBlock:failureBlock];
+}
+
+- (void)httpPOST:(AppURL)appUrl
+   parametersUrl:(NSString *)url
+headerWithUserInfo:(BOOL)headerWithUserInfo
+      parameters:(NSDictionary *)parameters
+    successBlock:(void (^)(int code, NSDictionary *dictResp))successBlock
+    failureBlock:(void (^)(NSError *error))failureBlock{
+    [self httpMethod:appUrl
+       parametersUrl:url isPostMethod:YES headerWithUserInfo:headerWithUserInfo params:nil successBlock:successBlock failureBlock:failureBlock];
+
 }
 
 
 
+
+
 - (void)httpMethod:(AppURL)appUrl
+   parametersUrl:(NSString *)url
       isPostMethod:(BOOL)isPostMethod
 headerWithUserInfo:(BOOL)headerWithUserInfo
             params:(NSDictionary *)params
@@ -90,6 +111,9 @@ headerWithUserInfo:(BOOL)headerWithUserInfo
    
     
     NSString *strUrl = [self stringHttpUrl:appUrl];
+    if (url) {
+        strUrl = [NSString stringWithFormat:@"%@%@",strUrl,url];
+    }
     
     if (isPostMethod) {
         operation=[manager POST:strUrl

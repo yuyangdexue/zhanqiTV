@@ -41,6 +41,16 @@
     saoBtn.frame = CGRectMake(kDeviceWidth-40, 20, 44, 44);
     saoBtn.hidden=YES;
     [topView addSubview:saoBtn];
+    
+    
+    
+    [self.navigationController.navigationBar setTitleTextAttributes:
+     
+     
+  @{NSFontAttributeName:[UIFont systemFontOfSize:16],
+    
+    
+    NSForegroundColorAttributeName:[UIColor whiteColor]}];
 }
 
 - (void)showTopView{

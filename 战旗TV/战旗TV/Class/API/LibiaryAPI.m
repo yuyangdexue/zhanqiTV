@@ -59,6 +59,20 @@
 
 
 + (void)httpGET:(AppURL)appUrl
+  parametersUrl:(NSString *)url
+headerWithUserInfo:(BOOL)headerWithUserInfo
+     parameters:(NSDictionary *)parameters
+   successBlock:(void (^)(int code, NSDictionary *dictResp))successBlock
+   failureBlock:(void (^)(NSError *error))failureBlock{
+    
+    [[LibiaryAPI getInstance].getHTTPClient httpGET:appUrl     parametersUrl:url  headerWithUserInfo:headerWithUserInfo parameters:parameters successBlock:successBlock failureBlock:failureBlock];
+    
+}
+
+
+
+
++ (void)httpGET:(AppURL)appUrl
 headerWithUserInfo:(BOOL)headerWithUserInfo
      parameters:(NSDictionary *)parameters
    successBlock:(void (^)(int code, NSDictionary *dictResp))successBlock

@@ -62,6 +62,7 @@ typedef NS_ENUM(int, AppURL) {
     AppURL_Home,
     AppURL_Live,
     AppURL_Game,
+    AppURL_GamelList,
     
     
     AppURL_End // URL enum 结束点
