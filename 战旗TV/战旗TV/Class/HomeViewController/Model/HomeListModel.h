@@ -48,6 +48,7 @@
 @property (nonatomic, strong) NSString<Optional>* gameUrl;
 @property (nonatomic, strong) NSString<Optional>* gameIcon;
 @property (nonatomic, strong) NSString<Optional>* follows;
+@property (nonatomic, strong) NSString<Optional>* videoIdKey;
 @end
 
 

@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "HomeListModel.h"
 @interface HomeMenuHeader : UICollectionReusableView
-
+@property (nonatomic,weak) UIViewController *viewController;
 - (void)resetArray:(NSArray *)array;
 
 - (void)resetTitle:(HomeListModel *)model;

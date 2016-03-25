@@ -118,6 +118,7 @@
              UICollectionElementKindSectionHeader
                                                withReuseIdentifier:IDENTIFIER_HEADER
                                                       forIndexPath:indexPath];
+            monthHeader.viewController =self;
             if (adSuperModel) {
                   [monthHeader  resetArray:adSuperModel.data];
             }
@@ -166,7 +167,7 @@
 didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     [collectionView deselectItemAtIndexPath:indexPath animated:YES];
     
-    RoomDetailController *rvc = [[RoomDetailController alloc]init];
+    RoomDetailController *rvc = [[RoomDetailController alloc]initWithModel:[((HomeListModel *)[homeSuperListModel.data objectAtIndex:indexPath.section]).lists objectAtIndex:indexPath.row]];
     [self.navigationController pushViewController:rvc animated:YES];
 }
 

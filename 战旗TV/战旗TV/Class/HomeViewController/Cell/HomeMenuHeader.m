@@ -11,6 +11,7 @@
 #import "Constants.h"
 #import "AdModel.h"
 #import "SectionView.h"
+#import "RoomDetailController.h"
 @interface HomeMenuHeader ()
 {
     SectionView *sectionView;
@@ -69,6 +70,8 @@
         return viewsArray.count;
     };
     self.mainScorllView.TapActionBlock = ^(NSInteger pageIndex){
+        RoomDetailController  *rvc = [[RoomDetailController alloc]initWithRoomModel:((AdModel *)[array objectAtIndex:pageIndex]).room];
+        [self.viewController.navigationController pushViewController:rvc animated:YES];
         NSLog(@"点击了第%d个",pageIndex);
     };
       [self addSubview:self.mainScorllView];

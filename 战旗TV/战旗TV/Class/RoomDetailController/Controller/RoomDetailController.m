@@ -18,6 +18,8 @@
     NSDateFormatter *_dateFormatter;
     NavgationView *navView;
     CATransform3D myTransform ;
+    Lists *listsModel;
+    RoomModel *roomModel;
 }
 
 @property (nonatomic ,strong)AVPlayer *player;
@@ -37,13 +39,70 @@
 @implementation RoomDetailController
 
 
+- (instancetype)initWithModel:(Lists *)model{
+    self = [super init];
+    listsModel = model;
+    return self;
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self createBasicConfig];
     [self createNav];
 
-    [self playVideo];
+  
+    
+    [self testUrl];
+}
+
+- (instancetype)initWithRoomModel:(RoomModel *)model{
+    self = [super init];
+    roomModel = model;
+    return self;
+
+}
+
+
+- (void)httpAsynchronousRequest{
+    
+    
+    
+}
+
+- (void)testUrl{
+    
+    NSString *strUrl ;
+    if (listsModel) {
+        strUrl = [NSString stringWithFormat:@"http://wshdl.load.cdn.zhanqi.tv/zqlive/%@.flv?get_url=1",listsModel.videoId];
+        
+    }else if(roomModel){
+        strUrl = [NSString stringWithFormat:@"http://wshdl.load.cdn.zhanqi.tv/zqlive/%@.flv?get_url=1",roomModel.videoIdKey];
+    }
+    
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:strUrl]];
+    [request setHTTPMethod:@"GET"];
+    [request setTimeoutInterval:10.0];
+    
+    NSOperationQueue *queue = [[NSOperationQueue alloc]init];
+    [NSURLConnection sendAsynchronousRequest:request
+                                       queue:queue
+                           completionHandler:^(NSURLResponse *response, NSData *data, NSError *error){
+                               if (error) {
+                                   NSLog(@"Httperror:%@%d", error.localizedDescription,error.code);
+                               }else{
+                                   
+                                   NSInteger responseCode = [(NSHTTPURLResponse *)response statusCode];
+                                   
+                                   NSString *responseString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+                                   [self playVideo:responseString];
+                                   NSLog(@"HttpResponseCode:%d", responseCode);
+                                   NSLog(@"HttpResponseBody %@",responseString);
+                               }
+                           }];
+
+    
+   
 }
 
 - (void)createNav{
@@ -119,10 +178,12 @@
     
 }
 
-- (void)playVideo{
-    NSURL *videoUrl = [NSURL URLWithString:@"http://v.jxvdy.com/sendfile/w5bgP3A8JgiQQo5l0hvoNGE2H16WbN09X-ONHPq3P3C1BISgf7C-qVs6_c8oaw3zKScO78I--b0BGFBRxlpw13sf2e54QA"];
+- (void)playVideo:(NSString *)url{
+    NSMutableString * filePath = [[NSMutableString alloc]initWithString:url];;
+    filePath=[filePath stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSURL *videoUrl = [NSURL URLWithString:filePath];
     self.playerItem = [AVPlayerItem playerItemWithURL:videoUrl];
-  //  [self.playerItem addObserver:self forKeyPath:@"status" options:NSKeyValueObservingOptionNew context:nil];// 监听status属性
+   [self.playerItem addObserver:self forKeyPath:@"status" options:NSKeyValueObservingOptionNew context:nil];// 监听status属性
 //    [self.playerItem addObserver:self forKeyPath:@"loadedTimeRanges" options:NSKeyValueObservingOptionNew context:nil];// 监听loadedTimeRanges属性
     self.player = [AVPlayer playerWithPlayerItem:self.playerItem];
     self.playerView.player = _player;
@@ -255,7 +316,7 @@
 }
 
 - (void)dealloc {
-//    [self.playerItem removeObserver:self forKeyPath:@"status" context:nil];
+    [self.playerItem removeObserver:self forKeyPath:@"status" context:nil];
 //    [self.playerItem removeObserver:self forKeyPath:@"loadedTimeRanges" context:nil];
 //    [[NSNotificationCenter defaultCenter] removeObserver:self name:AVPlayerItemDidPlayToEndTimeNotification object:self.playerItem];
 //    [self.playerLayer.player removeTimeObserver:self.playbackTimeObserver];

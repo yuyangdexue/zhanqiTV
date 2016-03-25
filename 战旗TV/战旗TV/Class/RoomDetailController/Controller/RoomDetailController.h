@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "HomeListModel.h"
+#import "AdModel.h"
 @interface RoomDetailController : UIViewController
+
+- (instancetype)initWithModel:(Lists *)model;
+- (instancetype)initWithRoomModel:(RoomModel *)model;
 
 @end
