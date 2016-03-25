@@ -21,6 +21,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, -60)
+                                                         forBarMetrics:UIBarMetricsDefault];
     UIView *topView = [[UIView alloc]init];
     topView.backgroundColor =kColor_Main_Color;
     topView.frame=CGRectMake(0, 0, kDeviceWidth, kMarginTopHeight);
@@ -41,6 +44,16 @@
     saoBtn.frame = CGRectMake(kDeviceWidth-40, 20, 44, 44);
     saoBtn.hidden=YES;
     [topView addSubview:saoBtn];
+    
+    
+    
+    [self.navigationController.navigationBar setTitleTextAttributes:
+     
+     
+  @{NSFontAttributeName:[UIFont systemFontOfSize:16],
+    
+    
+    NSForegroundColorAttributeName:[UIColor whiteColor]}];
 }
 
 - (void)showTopView{

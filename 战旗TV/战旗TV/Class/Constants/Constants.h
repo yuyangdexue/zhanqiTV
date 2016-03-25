@@ -49,6 +49,11 @@ extern float kDeviceHeight;
 #define kTabBarHeight 49
 
 #define PREFIX_URL @"http://www.zhanqi.tv/api/"//正式
+#define HLS_URL @"http://dlhls.cdn.zhanqi.tv/zqlive/"
+//#define HLS_URL @"http://vod.cdn.zhanqi.tv/hls/review/"
+//#define HLS_URL @"http://wshls.cdn.zhanqi.tv/zqlive/"
+//#define HLS_URL @"http://lxhls.cdn.zhanqi.tv/zqlive"
+
 #define kColor_Main_Color  [UIColor colorWithHexRGB:0x589FF5]
 
 typedef NS_ENUM(int, AppURL) {
@@ -57,6 +62,7 @@ typedef NS_ENUM(int, AppURL) {
     AppURL_Home,
     AppURL_Live,
     AppURL_Game,
+    AppURL_GamelList,
     
     
     AppURL_End // URL enum 结束点

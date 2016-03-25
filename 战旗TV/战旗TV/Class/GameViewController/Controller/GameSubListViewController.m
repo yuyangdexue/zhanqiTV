@@ -1,42 +1,53 @@
 //
-//  LiveViewController.m
+//  GameSubListViewController.m
 //  战旗TV
 //
-//  Created by 于洋 on 16/2/18.
+//  Created by 于洋 on 16/3/9.
 //  Copyright © 2016年 于洋. All rights reserved.
 //
 
-#import "LiveViewController.h"
+#import "GameSubListViewController.h"
 #import "LibiaryAPI.h"
 #import "LiveModel.h"
 #import "HomeCell.h"
 #import "RoomDetailController.h"
 #define IDENTIFIER_CELL @"homeMenuCell"
-@interface LiveViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
+@interface GameSubListViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 {
+    GameListModel *_gameModel;
     SuperLiveModel *superLiveModel;
     UICollectionView *_collectionView;
+    
 }
+
 @end
+@implementation GameSubListViewController
 
-@implementation LiveViewController
+- (instancetype)initWithGameId:(GameListModel *)model{
+    self = [super init];
+    if (!self) return nil;
+    _gameModel = model ;
+    return self;
+}
 
-- (void)viewDidLoad {
+- (void)viewDidLoad{
     [super viewDidLoad];
-      [self showTopView];
+    
+    self.title = _gameModel.name;
     [self initCollectionView];
-    [LibiaryAPI  httpGET:AppURL_Live headerWithUserInfo:YES parameters:nil successBlock:^(int code, NSDictionary *dictResp) {
+    [LibiaryAPI  httpGET:AppURL_GamelList parametersUrl:[NSString stringWithFormat:@"%@/20-1.json",_gameModel.id] headerWithUserInfo:YES parameters:nil successBlock:^(int code, NSDictionary *dictResp) {
+        
         superLiveModel = [[SuperLiveModel alloc]initWithDictionary:dictResp error:nil];
         if ([superLiveModel.code intValue]==0) {
             [_collectionView reloadData];
         }
-        
+
     } failureBlock:^(NSError *error) {
         
     }];
     
-    // Do any additional setup after loading the view.
 }
+
 
 - (void)initCollectionView{
     UICollectionViewFlowLayout *layout =
@@ -49,7 +60,7 @@
     
     _collectionView = [[UICollectionView alloc]
                        initWithFrame:CGRectMake(0, kMarginTopHeight, kDeviceWidth,
-                                                kDeviceHeight - kTabBarHeight -kMarginTopHeight)
+                                                kDeviceHeight  - 1-kMarginTopHeight)
                        collectionViewLayout:layout];
     
     _collectionView.dataSource = self;
@@ -104,7 +115,7 @@ didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     
     RoomDetailController *rvc = [[RoomDetailController alloc]initWithVideoId: ((Lists *)[superLiveModel.data.rooms objectAtIndex:indexPath.row]).videoId];
     [self.navigationController pushViewController:rvc animated:YES];
-
+    
     
     
 }

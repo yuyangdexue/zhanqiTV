@@ -16,6 +16,7 @@
 #import "HomeListModel.h"
 #import "RoomDetailController.h"
 
+
 #define IDENTIFIER_CELL @"homeMenuCell"
 #define IDENTIFIER_HEADER @"homeMenuHeader"
 #define IDENTIFIER_HEADERSECTION @"homeMenuHeaderSection"
@@ -51,7 +52,7 @@
     
     _collectionView = [[UICollectionView alloc]
                  initWithFrame:CGRectMake(0, kMarginTopHeight, kDeviceWidth,
-                                          kDeviceHeight - kTabBarHeight - 1-kMarginTopHeight)
+                                          kDeviceHeight - kTabBarHeight -kMarginTopHeight)
                  collectionViewLayout:layout];
     
     _collectionView.dataSource = self;
@@ -118,8 +119,9 @@
              UICollectionElementKindSectionHeader
                                                withReuseIdentifier:IDENTIFIER_HEADER
                                                       forIndexPath:indexPath];
-            monthHeader.viewController =self;
+
             if (adSuperModel) {
+                monthHeader.viewController=self;
                   [monthHeader  resetArray:adSuperModel.data];
             }
           
@@ -167,7 +169,8 @@
 didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     [collectionView deselectItemAtIndexPath:indexPath animated:YES];
     
-    RoomDetailController *rvc = [[RoomDetailController alloc]initWithModel:[((HomeListModel *)[homeSuperListModel.data objectAtIndex:indexPath.section]).lists objectAtIndex:indexPath.row]];
+   NSLog(@"====%@",((Lists *)[((HomeListModel *)[homeSuperListModel.data objectAtIndex:indexPath.section]).lists objectAtIndex:indexPath.row]).videoId);
+    RoomDetailController *rvc = [[RoomDetailController alloc]initWithVideoId: ((Lists *)[((HomeListModel *)[homeSuperListModel.data objectAtIndex:indexPath.section]).lists objectAtIndex:indexPath.row]).videoId];
     [self.navigationController pushViewController:rvc animated:YES];
 }
 

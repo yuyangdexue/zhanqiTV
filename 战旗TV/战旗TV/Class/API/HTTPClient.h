@@ -34,6 +34,12 @@ headerWithUserInfo:(BOOL)headerWithUserInfo
    successBlock:(void (^)(int code, NSDictionary *dictResp))successBlock
    failureBlock:(void (^)(NSError *error))failureBlock;
 
+- (void)httpGET:(AppURL)appUrl
+  parametersUrl:(NSString *)url
+headerWithUserInfo:(BOOL)headerWithUserInfo
+     parameters:(NSDictionary *)parameters
+   successBlock:(void (^)(int code, NSDictionary *dictResp))successBlock
+   failureBlock:(void (^)(NSError *error))failureBlock;
 /**
  *  网络请求 post
  *
@@ -46,6 +52,13 @@ headerWithUserInfo:(BOOL)headerWithUserInfo
 
 
 - (void)httpPOST:(AppURL)appUrl
+headerWithUserInfo:(BOOL)headerWithUserInfo
+      parameters:(NSDictionary *)parameters
+    successBlock:(void (^)(int code, NSDictionary *dictResp))successBlock
+    failureBlock:(void (^)(NSError *error))failureBlock;
+
+- (void)httpPOST:(AppURL)appUrl
+parametersUrl:(NSString *)url
 headerWithUserInfo:(BOOL)headerWithUserInfo
       parameters:(NSDictionary *)parameters
     successBlock:(void (^)(int code, NSDictionary *dictResp))successBlock

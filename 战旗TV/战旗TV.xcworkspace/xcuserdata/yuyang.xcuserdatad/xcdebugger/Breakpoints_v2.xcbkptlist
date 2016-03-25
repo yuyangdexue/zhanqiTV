@@ -26,12 +26,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "&#x6218;&#x65d7;TV/Class/RoomDetailController/Controller/RoomDetailController.m"
-            timestampString = "478427436.695585"
+            timestampString = "480575343.537312"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "185"
-            endingLineNumber = "185"
-            landmarkName = "-playVideo:"
+            startingLineNumber = "179"
+            endingLineNumber = "179"
+            landmarkName = "-customBack"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -42,12 +42,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "&#x6218;&#x65d7;TV/Class/RoomDetailController/Controller/RoomDetailController.m"
-            timestampString = "478427436.695585"
+            timestampString = "480575343.537312"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "209"
-            endingLineNumber = "209"
-            landmarkName = "-observeValueForKeyPath:ofObject:change:context:"
+            startingLineNumber = "203"
+            endingLineNumber = "203"
+            landmarkName = "-swtichAction"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

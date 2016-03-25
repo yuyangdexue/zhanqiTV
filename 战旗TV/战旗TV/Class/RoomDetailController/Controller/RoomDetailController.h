@@ -13,5 +13,6 @@
 
 - (instancetype)initWithModel:(Lists *)model;
 - (instancetype)initWithRoomModel:(RoomModel *)model;
+- (instancetype)initWithVideoId:(NSString *)vid;
 
 @end
