@@ -1,0 +1,5 @@
+language: objective-c
+osx_image: xcode9
+xcode_workspace: 战旗TV/战旗TV.xcworkspace
+xcode_scheme: 战旗TV
+
