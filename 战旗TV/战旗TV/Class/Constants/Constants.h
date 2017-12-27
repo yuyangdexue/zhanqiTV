@@ -19,7 +19,7 @@
 #import <UIActionSheet+Blocks.h>
 #import "UIImageView+AFNetworking.h"
 #import "NSDictionary+Accessors.h"
-#import "MobClick.h"
+
 
 #import "NSArray+BFKit.h"
 #import "NSDate+BFKit.h"

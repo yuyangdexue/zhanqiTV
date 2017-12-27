@@ -416,7 +416,7 @@
 		26F1588E1C76B5B00094BB8E /* HomeMenuHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F1588D1C76B5B00094BB8E /* HomeMenuHeader.m */; };
 		26F158911C76B5D40094BB8E /* HomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F158901C76B5D40094BB8E /* HomeCell.m */; };
 		26F158941C76B9860094BB8E /* SectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F158931C76B9860094BB8E /* SectionView.m */; };
-		FFA7FAEAD01465349FDDBE46 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C4711D3A932EDFF6081352 /* libPods.a */; };
+		47AB7F8E58A1EA136FB542C8 /* libPods-战旗TV.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 29AD9C522A92A1DE834B7D9F /* libPods-战旗TV.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -454,7 +454,6 @@
 		269A23191C7AFA2B0015A406 /* PlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerView.m; sourceTree = "<group>"; };
 		269A231B1C7AFF0D0015A406 /* NavgationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavgationView.h; sourceTree = "<group>"; };
 		269A231C1C7AFF0D0015A406 /* NavgationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavgationView.m; sourceTree = "<group>"; };
-		26B121782D8772E1AF080B25 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		26BA721A1C90360600EB4B09 /* GameSubListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameSubListViewController.h; sourceTree = "<group>"; };
 		26BA721B1C90360600EB4B09 /* GameSubListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameSubListViewController.m; sourceTree = "<group>"; };
 		26F1530D1C75B5610094BB8E /* 战旗TV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "战旗TV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -874,8 +873,9 @@
 		26F158901C76B5D40094BB8E /* HomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeCell.m; sourceTree = "<group>"; };
 		26F158921C76B9860094BB8E /* SectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionView.h; sourceTree = "<group>"; };
 		26F158931C76B9860094BB8E /* SectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionView.m; sourceTree = "<group>"; };
-		53C4711D3A932EDFF6081352 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		EB43E0037AFEB33D3420BD79 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		29AD9C522A92A1DE834B7D9F /* libPods-战旗TV.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-战旗TV.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		813A2FF1D2E1F6AA28B78F48 /* Pods-战旗TV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-战旗TV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-战旗TV/Pods-战旗TV.debug.xcconfig"; sourceTree = "<group>"; };
+		B19D2E9C6A84240D08BD2AD4 /* Pods-战旗TV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-战旗TV.release.xcconfig"; path = "Pods/Target Support Files/Pods-战旗TV/Pods-战旗TV.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -883,20 +883,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFA7FAEAD01465349FDDBE46 /* libPods.a in Frameworks */,
+				47AB7F8E58A1EA136FB542C8 /* libPods-战旗TV.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		107BB97525AE0D40A0D6E329 /* Pods */ = {
+		09A457F84350014678C4D33D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				26B121782D8772E1AF080B25 /* Pods.debug.xcconfig */,
-				EB43E0037AFEB33D3420BD79 /* Pods.release.xcconfig */,
+				29AD9C522A92A1DE834B7D9F /* libPods-战旗TV.a */,
 			);
-			name = Pods;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		26282CEC1C90089200D85C11 /* DLSlideView */ = {
@@ -952,7 +951,6 @@
 			children = (
 				269A230F1C7719FD0015A406 /* Cell */,
 				269A23101C7719FD0015A406 /* Controller */,
-				269A23111C7719FD0015A406 /* Model */,
 			);
 			path = RoomDetailController;
 			sourceTree = "<group>";
@@ -975,20 +973,13 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		269A23111C7719FD0015A406 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		26F153041C75B5610094BB8E = {
 			isa = PBXGroup;
 			children = (
 				26F1530F1C75B5610094BB8E /* 战旗TV */,
 				26F1530E1C75B5610094BB8E /* Products */,
-				107BB97525AE0D40A0D6E329 /* Pods */,
-				6C5B3DD739E4DC05B0755B26 /* Frameworks */,
+				E79E397A7F10E46F3F13A519 /* Pods */,
+				09A457F84350014678C4D33D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1447,7 +1438,6 @@
 		26F157F51C75BA890094BB8E /* LiveViewController */ = {
 			isa = PBXGroup;
 			children = (
-				26F158751C75CA000094BB8E /* Cell */,
 				26F158761C75CA000094BB8E /* Controller */,
 				26F158771C75CA000094BB8E /* Model */,
 			);
@@ -1649,13 +1639,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		26F158751C75CA000094BB8E /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
 		26F158761C75CA000094BB8E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -1697,12 +1680,13 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		6C5B3DD739E4DC05B0755B26 /* Frameworks */ = {
+		E79E397A7F10E46F3F13A519 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				53C4711D3A932EDFF6081352 /* libPods.a */,
+				813A2FF1D2E1F6AA28B78F48 /* Pods-战旗TV.debug.xcconfig */,
+				B19D2E9C6A84240D08BD2AD4 /* Pods-战旗TV.release.xcconfig */,
 			);
-			name = Frameworks;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1712,12 +1696,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 26F153241C75B5620094BB8E /* Build configuration list for PBXNativeTarget "战旗TV" */;
 			buildPhases = (
-				1E72A8EB44080DEE1B4F3BED /* Check Pods Manifest.lock */,
+				F09303F3A8E4281EEF15F9BE /* [CP] Check Pods Manifest.lock */,
 				26F153091C75B5610094BB8E /* Sources */,
 				26F1530A1C75B5610094BB8E /* Frameworks */,
 				26F1530B1C75B5610094BB8E /* Resources */,
-				96E283FEFA045EF2E7B6782F /* Embed Pods Frameworks */,
-				CC3B93EA1343CB7C79907886 /* Copy Pods Resources */,
+				9D188712FCA86FC4ADF08551 /* [CP] Embed Pods Frameworks */,
+				1455460EEAB3E6B635D9960C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -2141,49 +2125,55 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1E72A8EB44080DEE1B4F3BED /* Check Pods Manifest.lock */ = {
+		1455460EEAB3E6B635D9960C /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-战旗TV/Pods-战旗TV-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyBoardManager/Resources/IQKeyboardManager.bundle",
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-战旗TV/Pods-战旗TV-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		96E283FEFA045EF2E7B6782F /* Embed Pods Frameworks */ = {
+		9D188712FCA86FC4ADF08551 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-战旗TV/Pods-战旗TV-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CC3B93EA1343CB7C79907886 /* Copy Pods Resources */ = {
+		F09303F3A8E4281EEF15F9BE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-战旗TV-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -2320,7 +2310,7 @@
 		};
 		26F153251C75B5620094BB8E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 26B121782D8772E1AF080B25 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 813A2FF1D2E1F6AA28B78F48 /* Pods-战旗TV.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -2333,7 +2323,7 @@
 		};
 		26F153261C75B5620094BB8E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EB43E0037AFEB33D3420BD79 /* Pods.release.xcconfig */;
+			baseConfigurationReference = B19D2E9C6A84240D08BD2AD4 /* Pods-战旗TV.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

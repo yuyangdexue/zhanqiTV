@@ -32,7 +32,7 @@
             startingLineNumber = "179"
             endingLineNumber = "179"
             landmarkName = "-customBack"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -48,7 +48,7 @@
             startingLineNumber = "203"
             endingLineNumber = "203"
             landmarkName = "-swtichAction"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

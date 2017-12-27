@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8642CC820CE8C5B88C113D7F47AF4BC3"
-               BuildableName = "libFMDB.a"
-               BlueprintName = "FMDB"
+               BlueprintIdentifier = "55930813A8AD614EE2C1B2085282505C"
+               BuildableName = "libPods-&#x6218;&#x65d7;TV.a"
+               BlueprintName = "Pods-&#x6218;&#x65d7;TV"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,9 +47,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8642CC820CE8C5B88C113D7F47AF4BC3"
-            BuildableName = "libFMDB.a"
-            BlueprintName = "FMDB"
+            BlueprintIdentifier = "55930813A8AD614EE2C1B2085282505C"
+            BuildableName = "libPods-&#x6218;&#x65d7;TV.a"
+            BlueprintName = "Pods-&#x6218;&#x65d7;TV"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

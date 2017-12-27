@@ -1,12 +1,14 @@
 platform :ios, '7.0'
-pod 'AFNetworking'
-pod 'AMap2DMap'
-pod 'FMDB'
-pod 'IQKeyboardManager'
-pod 'JSONModel'
-pod 'libextobjc'
-pod 'MCUIColorUtils'
-pod 'NSDictionary+Accessors'
-pod 'UIActionSheet+Blocks'
-pod 'UIAlertView+Block'
-pod 'UMengAnalytics'
+
+target '战旗TV' do
+  pod 'AFNetworking'
+  pod 'FMDB'
+  pod 'IQKeyboardManager'
+  pod 'JSONModel'
+  pod 'libextobjc'
+  pod 'MCUIColorUtils'
+  pod 'NSDictionary+Accessors'
+  pod 'UIActionSheet+Blocks'
+  pod 'UIAlertView+Block'
+end
+
